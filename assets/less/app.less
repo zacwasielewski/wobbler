@@ -27,12 +27,25 @@ body { }
 
 .navbar {
   margin-bottom: 0;
-  background-color: transparent;
+  font-family: 'freight-micro-pro';
+  font-size: @font-size-small ;
 }
 .navbar-inverse {
   margin-bottom: -@navbar-height;
-  background-color: transparent;
-  border-color: transparent;
+  border: none;
+}
+.navbar-brand {
+  font-family: 'freight-micro-pro';
+  font-size: @font-size-small ;
+  font-weight: bold;
+}
+.navbar-description {
+  white-space: nowrap;
+  .hidden-xs;
+  .hidden-sm;
+  line-height: @navbar-height;
+  float: left;
+  color: @gray-light;
 }
 
 /* ==========================================================================
