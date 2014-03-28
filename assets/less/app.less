@@ -4,6 +4,15 @@
 
 @import "bootstrap/bootstrap.less";
 
+.subtext {
+  font-family: 'freight-micro-pro';
+  font-weight: light;
+  font-style: italic;
+  .small;
+  //color: @gray-light;
+  .text-muted;
+}
+
 /* ==========================================================================
    Base
    ========================================================================== */
@@ -52,9 +61,33 @@ body { }
    ========================================================================== */
 
 .hentry header { }
+.hentry header .entry-thumbnail img {
+  width: 100%;
+  height: auto;
+}
 .hentry time { }
-.hentry .byline { }
-.hentry .entry-content { }
+.hentry .byline {
+  .subtext;
+}
+.hentry .entry-content {
+  max-width: 40em;
+  //text-align: justify;
+  //-webkit-hyphens: auto;
+  //   -moz-hyphens: auto;
+  //        hyphens: auto;
+}
+.hentry .entry-content .thumbnail {
+  padding: 0;
+}
+.hentry .entry-content .thumbnail .caption {
+  .subtext;
+}
+.hentry .entry-content .pull-right {
+  margin-left: @grid-gutter-width;
+}
+.hentry .entry-content .pull-left {
+  margin-right: @grid-gutter-width;
+}
 .hentry footer { }
 
 
