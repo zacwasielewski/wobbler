@@ -13,6 +13,15 @@
   .text-muted;
 }
 
+.inverse {
+  color: #fff;
+  background-color: #222;
+}
+
+.container {
+  max-width: 930px;
+}
+
 /* ==========================================================================
    Base
    ========================================================================== */
@@ -89,7 +98,7 @@ body { }
   .subtext;
 }
 .hentry .entry-content {
-  max-width: 40em;
+  //max-width: 40em;
   //text-align: justify;
   //-webkit-hyphens: auto;
   //   -moz-hyphens: auto;
@@ -109,6 +118,17 @@ body { }
 }
 .hentry footer { }
 
+.hentry .entry-author {
+  margin: @line-height-computed*2 0 @line-height-computed 0;
+  padding: @line-height-computed 0 @line-height-computed*2 0;
+  border-top: 1px solid @gray-lighter;
+  border-bottom: 1px solid @gray-lighter;
+}
+
+.hentry .entry-author img {
+  .pull-left;
+  margin-right: @grid-gutter-width;
+}
 
 
 /* ==========================================================================
