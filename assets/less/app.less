@@ -93,26 +93,24 @@ body { }
   width: 100%;
   height: auto;
 }
+
 .hentry time { }
 .hentry .byline {
   .subtext;
 }
+
 .hentry .entry-title {
   margin-top: @line-height-computed*2;
 }
+
 .hentry .entry-content {
   margin-bottom: @line-height-computed/2;
 }
-.hentry .entry-content p {
-  xmargin-bottom: 0;
-}
+
 .hentry .entry-content p.lead {
   margin-bottom: inherit;
 }
-.hentry .entry-content p + p{
-  xtext-indent: 2em;
-  xmargin-top: 0;
-}
+
 .hentry .entry-content blockquote {
   margin: @line-height-computed/2 0;
   padding-top: 0;
@@ -128,6 +126,7 @@ body { }
 
 .hentry .entry-content .thumbnail {
   padding: 0;
+  margin-bottom: @line-height-computed/2;
 }
 .hentry .entry-content .thumbnail .caption {
   .subtext;
