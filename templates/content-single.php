@@ -1,6 +1,6 @@
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
-    
+
     <header>
       <div class="entry-thumbnail">
         <?php the_post_thumbnail( 'header' ); ?>
@@ -15,7 +15,17 @@
       <div class="entry-content">
         <?php the_content(); ?>
       </div>
-      <?php get_template_part('templates/entry-meta'); ?>
+    </div>
+
+    <div class="entry-blog-meta">
+      <div class="container">
+        <center><big>You are reading <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a></big><br>
+          The entry <em><?php the_title(); ?></em> was posted on <?php the_date(); ?>
+          <?php if (get_the_tags()): ?>
+            and tagged <?php the_tags('', ', ',''); ?>
+          <?php endif; ?>
+        </center>
+      </div>
     </div>
 
     <div class="entry-author">

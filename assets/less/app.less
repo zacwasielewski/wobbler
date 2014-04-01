@@ -11,6 +11,9 @@
   .small;
   //color: @gray-light;
   .text-muted;
+  em {
+    font-style: normal;
+  }
 }
 
 .inverse {
@@ -137,10 +140,18 @@ body { }
 .hentry .entry-content .pull-left {
   margin-right: @grid-gutter-width;
 }
+
+.hentry .entry-blog-meta {
+  .subtext;
+  border-top: 1px solid @gray-lighter;
+  margin: @line-height-computed 0 @line-height-computed 0;
+  padding: @line-height-computed*2 0 @line-height-computed 0;
+}
+
 .hentry footer { }
 
 .hentry .entry-author {
-  margin: @line-height-computed*2 0 @line-height-computed 0;
+  margin: 0 0 @line-height-computed 0;
   padding: @line-height-computed 0 @line-height-computed*2 0;
   border-top: 1px solid @gray-lighter;
   border-bottom: 1px solid @gray-lighter;
